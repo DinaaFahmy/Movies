@@ -1,0 +1,10 @@
+
+<div class="card" style="width: 18rem;" *ngFor="let item of m" style="display: inline-block;">
+    <img class="card-img-top" src="../../assets/img/img.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ item.movie_name }}</h5>
+      <p class="card-text"><em><strong>Genre: </strong></em>{{ item.genre }}</p>
+      <p class="card-text"><em><strong>Language: </strong></em>{{ item.language }}</p>
+      <button (click)="details($event.target)" value="{{ item.movie_id}}" class="btn btn-primary">Watch details</button>
+  </div>
+</div>
